@@ -1,0 +1,11 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+header{
+    padding:5px;
+    background-color:#163355;
+    color: #fff;
+}
+header>div>h1{
+    font-size: 18px;
+}
