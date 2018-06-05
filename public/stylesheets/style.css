@@ -1,11 +1,45 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
-header{
+.contacto>div{
+    margin-top: 10px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding:15px !important;
+}
+header,footer{
     padding:5px;
     background-color:#163355;
     color: #fff;
 }
 header>div>h1{
     font-size: 18px;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.iconos{
+    margin-right: 5px;
+}
+.logo {
+    text-align: center;
+}
+.logo>img{
+    max-width: 400px;
+}
+.logo-frog{
+    float: right;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.logo-frog>img{
+    max-width: 200px;
 }

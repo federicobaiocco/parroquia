@@ -2,4 +2,10 @@ extends layout
 
 block content
   section(class="row")
+    figure(class="logo col-md-12")
+        img(src="/images/logo.jpg" class="img-responsive")
+  section(class="row")
+      form(method="POST" action="/" class="text-center" role="form")
+          div(class="form-group")
+              input(type="text" class="form-control" placeholder="cantidad" name="cantidad")
 
