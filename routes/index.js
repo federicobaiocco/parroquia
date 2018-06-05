@@ -17,10 +17,15 @@ router.post('/submit', async function(req, res, next) {
             total = await getTotal();
             res.redirect('/');
         })
-        .catch((err) => {
-            console.log(err);
+        .catch(async (err) => {
+            res.locals.message = err.message;
+            res.locals.error = req.app.get('env') === 'development' ? err : {};
+            // render the error page
+            res.status(err.status || 500);
+            var total = await getTotal();
+            res.locals.cant = total;
+            res.render('error');
         });
-
 
 });
 
