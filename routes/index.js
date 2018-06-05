@@ -4,8 +4,8 @@ var cantidad = require('../cantidadSchema').Cantidad;
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  total = await getTotal();
-  res.render('index', { cant: total });
+    total = await getTotal();
+    res.render('index', { cant: total });
 });
 
 router.post('/submit', async function(req, res, next) {
@@ -14,17 +14,15 @@ router.post('/submit', async function(req, res, next) {
     c.fecha = Date.now();
     c.save()
         .then(async (r) => {
-            total = await getTotal();
             res.redirect('/');
         })
         .catch(async (err) => {
-            res.locals.message = err.message;
-            res.locals.error = req.app.get('env') === 'development' ? err : {};
+            res.locals.message = err.errors.cantidad.message;
+            // res.locals.error = req.app.get('env') === 'development' ? err : {};
             // render the error page
             res.status(err.status || 500);
             var total = await getTotal();
-            res.locals.cant = total;
-            res.render('error');
+            res.render('error',{cant: total});
         });
 
 });

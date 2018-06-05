@@ -5,7 +5,7 @@ var cantidadSchema = new Schema({
     cantidad: {
         type: Number,
         required: true,
-        min: [1, 'Ha ingresado un número incorrecto.'],
+        min: [1, 'La cantidad mínima por entrada es 1.'],
         max: [100, 'La cantidad máxima por entrada son 100.']
     },
     fecha: {
