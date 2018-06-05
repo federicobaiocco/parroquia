@@ -2,11 +2,15 @@ extends layout
 
 block content
   section(class="row")
-    figure(class="logo col-md-12")
+    figure(class="logo col-md-12 img-responsive")
         img(src="/images/logo.jpg" class="img-responsive")
   section(class="row")
-      form(method="POST" action="/" class="text-center" role="form")
-          div(class="form-group")
-              input(type="text" class="form-control" placeholder="cantidad" name="cantidad")
-              input(type="submit" value="Enviar" class="btn btn-default" style="background-color:#009add; color:white")
+    div(class="col-md-12 text-center")
+        h3 ¿Cuántos Jesús en vos confío resaste?
+  section(class="row")
+      div(class="col-md-5 col-sm-4 col-xs-4")
+      form(method="POST" action="/" class="col-md-2 col-sm-4 col-xs-4 text-center" role="form")
+          div(class="form-group formulario")
+              input(type="number" class="form-control" placeholder="cantidad" name="cantidad")
+              input(type="submit" value="Enviar" class="btn btn-default boton" style="background-color:#009add; color:white")
 

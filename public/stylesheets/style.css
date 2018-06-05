@@ -1,6 +1,9 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+.boton{
+    background-color:#163355 !important;
+}
 .contacto>div{
     margin-top: 10px;
 }
@@ -10,6 +13,10 @@ footer {
     bottom: 0;
     padding:15px !important;
 }
+.formulario>input{
+    margin-top: 10px;
+}
+
 header,footer{
     padding:5px;
     background-color:#163355;
@@ -17,6 +24,7 @@ header,footer{
 }
 header>div>h1{
     font-size: 18px;
+    display: inline-block;
 }
 html {
     min-height: 100%;
@@ -26,12 +34,20 @@ html {
 .iconos{
     margin-right: 5px;
 }
+
+.img-header{
+    max-width: 120px;
+    border-radius: 50%;
+}
 .logo {
     text-align: center;
 }
 .logo>img{
+    width: 100%;
+    height: auto;
     max-width: 400px;
 }
+
 .logo-frog{
     float: right;
     position: relative;
@@ -42,4 +58,29 @@ html {
 }
 .logo-frog>img{
     max-width: 200px;
+}
+
+/* --------------------Media----------------- */
+
+@media (max-width: 768px) {
+
+    .logo-frog{
+        float: none;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .contacto{
+        text-align: center;
+    }
+
+    footer {
+        position: relative;
+        width: 100% !important;
+        bottom: 0;
+        padding:15px !important;
+    }
 }
