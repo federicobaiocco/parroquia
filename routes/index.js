@@ -5,7 +5,8 @@ var cantidad = require('../cantidadSchema').Cantidad;
 /* GET home page. */
 router.get('/', async function(req, res, next) {
     total = await getTotal();
-    res.render('index', { cant: total });
+    totalHoy = await getTotalHoy();
+    res.render('index', { cant: total, cantHoy: totalHoy });
 });
 
 router.post('/submit', async function(req, res, next) {
@@ -44,4 +45,36 @@ async function getTotal(){
   })
 }
 
+
+async function getTotalHoy(){
+    var d1 = new Date();
+    d1.setHours(0,0,0,0);
+    var d2 = d1.addDays(1);
+    return new Promise((result) => {
+        cantidad.aggregate(
+            [
+                {$match:
+                        {
+                            fecha:{ $gte : d1,
+                                $lt: d2}
+                        }
+                },
+                {$group:
+                        { _id:{},
+                            totalHoy: {$sum:'$cantidad'}
+                        }
+                }
+            ]
+        ).then((r) => {
+            result(r[0].totalHoy);
+        })
+    })
+}
+
+
+Date.prototype.addDays = function(days) {
+    var dat = new Date(this.valueOf());
+    dat.setDate(dat.getDate() + days);
+    return dat;
+}
 module.exports = router;
