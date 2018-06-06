@@ -19,11 +19,12 @@ router.post('/submit', async function(req, res, next) {
         })
         .catch(async (err) => {
             res.locals.message = err.errors.cantidad.message;
-            // res.locals.error = req.app.get('env') === 'development' ? err : {};
-            // render the error page
             res.status(err.status || 500);
             var total = await getTotal();
-            res.render('error',{cant: total});
+            var totalHoy = await getTotalHoy();
+            res.render('error',{cant: total,
+                                cantHoy: totalHoy
+                                });
         });
 
 });

@@ -1,3 +1,6 @@
+html, body{
+    height: 100% !important;
+}
 body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -8,12 +11,11 @@ body {
 .border-red{
     border-color: red !important;
 }
-.contacto>div{
-    margin-top: 10px;
+.contacto>div>span,i{
+    font-size: 12px;
 }
+
 footer {
-
-
     padding:15px !important;
 }
 .formulario>input{
@@ -69,7 +71,7 @@ html {
 
 /* --------------------Media----------------- */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .logo-frog{
         float: none;
@@ -85,9 +87,29 @@ html {
     }
 
     footer {
-        position: relative;
+        position: absolute;
         width: 100% !important;
         bottom: 0;
         padding:15px !important;
     }
+}
+
+@media screen and (min-height: 660px) {
+    footer {
+        position: absolute;
+        width: 100% !important;
+        bottom: 0;
+        padding:15px !important;
+    }
+
+}
+
+/*-------------animacion------------*/
+.temblar{
+    -webkit-animation: tiembla 0.1s infinite;
+}
+@-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
 }
