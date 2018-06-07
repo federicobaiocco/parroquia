@@ -22,9 +22,7 @@ router.post('/submit', async function(req, res, next) {
             res.status(err.status || 500);
             var total = await getTotal();
             var totalHoy = await getTotalHoy();
-            res.render('error',{cant: total,
-                                cantHoy: totalHoy
-                                });
+            res.render('error',{cant: total, cantHoy: totalHoy});
         });
 
 });
@@ -39,9 +37,13 @@ async function getTotal(){
                       }
               }
           ]
-      ).then((r) => {
+      )
+      .then((r) => {
           console.log(r[0].total);
           result(r[0].total);
+      })
+      .catch((e) => {
+          result(0);
       })
   })
 }
@@ -66,8 +68,12 @@ async function getTotalHoy(){
                         }
                 }
             ]
-        ).then((r) => {
+        )
+        .then((r) => {
             result(r[0].totalHoy);
+        })
+        .catch((e) => {
+            result(0);
         })
     })
 }
