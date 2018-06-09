@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var cantidad = require('../cantidadSchema').Cantidad;
 
+
 /* GET home page. */
 router.get('/', async function(req, res, next) {
     total = await getTotal();

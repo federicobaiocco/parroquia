@@ -24,6 +24,7 @@ cantidad.find().then((result) => {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+app.set('port', (process.env.PORT || 8080))
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -49,8 +50,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-app.listen(8080, function () {
+/*app.listen(8080, function () {
     console.log('Escuchando en el puerto 8080');
-});
+});*/
+app.listen(app.get('port'));
 module.exports = app;

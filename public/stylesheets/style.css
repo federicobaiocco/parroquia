@@ -94,13 +94,8 @@ html {
     }
 }
 
-@media screen and (min-height: 660px) {
-    footer {
-        position: absolute;
-        width: 100% !important;
-        bottom: 0;
-        padding:15px !important;
-    }
+@media screen and (min-height: 800px) {
+
 
 }
 
