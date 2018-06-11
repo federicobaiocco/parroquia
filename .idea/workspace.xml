@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c39ec9f3-e662-4202-bce9-9cff5ed4bfc8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongooseConnection.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongooseConnection.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
+            <state relative-caret-position="1547">
               <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
             </state>
           </provider>
@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
-              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -71,9 +71,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mongooseConnection.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mongooseConnection.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mongooseConnection.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
@@ -128,6 +132,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/views/layout.pug" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/mongooseConnection.js" />
       </list>
     </option>
   </component>
@@ -158,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,7 +202,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +247,8 @@
       <workItem from="1528414895391" duration="705000" />
       <workItem from="1528415679822" duration="329000" />
       <workItem from="1528416227865" duration="778000" />
-      <workItem from="1528551204136" duration="436000" />
+      <workItem from="1528551204136" duration="1726000" />
+      <workItem from="1528657013940" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="imagenes">
       <created>1528217076679</created>
@@ -255,21 +261,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31233000" />
+    <option name="totallyTimeSpent" value="33236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15222482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15222482" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12099922" side_tool="true" visible="true" weight="0.22680412" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12177986" side_tool="true" visible="true" weight="0.22680412" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8790008" visible="true" weight="0.22680412" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.87822014" visible="true" weight="0.22680412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,19 +291,19 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.3298969" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15222482" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49960968" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5003903" side_tool="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -569,16 +575,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/indexError.pug" />
-    <entry file="file://$PROJECT_DIR$/views/error.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongooseConnection.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -590,27 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cantidadSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -630,8 +605,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="1547">
           <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cantidadSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongooseConnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
